@@ -19,7 +19,7 @@ st.markdown("""
 
 
 # Título del formulario
-st.header(" Datos **:blue[Clientes]**")
+st.header(" Datos **:orange[Clientes]**")
 
 
 nombre_cliente = st.text_input("Nombre del Cliente:")
@@ -45,7 +45,7 @@ st.success(f"     📅  Fecha : {fecha_formateada}")
 st.markdown("---")  # Línea horizontal
 
 
-st.header(" Datos del Servicio")
+st.header(" Datos del **:orange[Servicio]**")
 
 col5, col6 = st.columns([2, 3])
 
