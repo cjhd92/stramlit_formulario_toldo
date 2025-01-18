@@ -1,4 +1,5 @@
 import streamlit as st
+from datetime import datetime
 
 # Título del formulario
 
@@ -33,6 +34,14 @@ with col3:
 with col4:
     telefono_cliente = st.text_input("Teléfono del cliente:")
 
+fecha_actual = datetime.now()
+fecha_solo = fecha_actual.date()
+fecha_formateada = fecha_actual.strftime('%d-%m-%Y')
+
+print(fecha_formateada)
+# Mostrar la fecha seleccionada
+
+st.success(f"     📅  Fecha : {fecha_formateada}")
 st.markdown("---")  # Línea horizontal
 
 
