@@ -19,7 +19,7 @@ st.markdown("""
 
 
 # Título del formulario
-st.header(" Datos Clientes")
+st.header(" Datos **:blue[Clientes]**")
 
 
 nombre_cliente = st.text_input("Nombre del Cliente:")
